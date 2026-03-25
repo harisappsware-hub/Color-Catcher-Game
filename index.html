@@ -9,10 +9,23 @@
 <body>
     <div class="game-container">
         <h1>🎮 Color Catcher</h1>
-        <p>Score: <span id="score">0</span> | Lives: <span id="lives">3</span></p>
+        <div class="scoreboard">
+            <span>Score: <span id="score">0</span></span>
+            <span>Lives: <span id="lives">3</span></span>
+        </div>
         <canvas id="gameCanvas" width="400" height="600"></canvas>
-        <p>Use Left & Right arrows to move!</p>
+        <p class="instructions">Use Left & Right arrows to move!</p>
     </div>
+
+    <!-- Game Over Modal -->
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <h2>🎉 Game Over</h2>
+            <p>Your Score: <span id="finalScore">0</span></p>
+            <button id="playAgain">Play Again</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
